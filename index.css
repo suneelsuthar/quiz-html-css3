@@ -1,0 +1,251 @@
+body {
+  font-size: 18px;
+}
+#_container {
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.098);
+  padding: 15px;
+}
+#result_section {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.098);
+  padding: 15px;
+  display: none;
+}
+._question {
+  font-weight: bold;
+}
+#questios {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+._option_section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 5px;
+  background-color: rgb(242, 242, 242);
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-align: left !important;
+}
+
+._options {
+  /* width: 90%; */
+}
+._option_number {
+  width: 40px;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  margin-right: 10px;
+}
+#submit_section {
+  text-align: center;
+}
+#submit_button,
+#retake_button {
+  margin: auto;
+  padding: 10px;
+  width: 120px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+#explain {
+  text-align: left !important;
+  padding: 10px;
+}
+._title {
+  font-weight: bold;
+  margin-top: 0px;
+  padding: 5px;
+  color: black;
+}
+._attempt {
+  display: flex !important;
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px dotted gray;
+}
+.score_div {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+#_graph {
+  width: 0px;
+  height: 20px;
+  background-color: rgb(144, 212, 42);
+  border-radius: 3px;
+}
+.graph_container {
+  background-color: rgb(241, 241, 252);
+  border-radius: 3px;
+  width: 50%;
+}
+.score_title {
+  padding-right: 5px;
+}
+#_score {
+  padding-left: 5px;
+}
+.result_table {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.result_table div {
+  width: 28%;
+  font-weight: bold;
+}
+
+.solution {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px dotted rgb(206, 212, 218);
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(247, 249, 251);
+}
+.solutionTitle {
+  color: green;
+}
+._table_heading {
+  border: 0px !important;
+}
+#td1 {
+  width: auto !important;
+}
+#attempt_correct {
+  color: green;
+}
+#attempt_inncorrect {
+  color: brown;
+}
+#attempt_ignored {
+  color: gray;
+}
+#_ignored {
+  color: gray;
+}
+#td4 {
+  color: green;
+}
+._table_heading {
+  border: 2px dotted;
+}
+
+@media only screen and (max-width: 700px) {
+  #_container {
+    padding-bottom: 30px;
+  }
+  .result_table {
+    font-size: 15px;
+  }
+  .solution {
+    border: 2px dotted rgb(206, 212, 218);
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(247, 249, 251);
+  }
+  .solutionTitle {
+    display: block;
+    text-align: center;
+  }
+  #td4 {
+    padding-left: 25px;
+    text-align: left;
+  }
+  #_ignored {
+    padding-left: 25px;
+    text-align: left;
+  }
+  #result_section{
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+
+
+/* quiz output */
+#quizOutput{
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 3px 0px 3px 0px;
+  /* font-size: 17px; */
+}
+
+#table_1,#table_2,#table_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
+  width: auto;
+  /* border: 1px solid red; */
+  /* justify-content:space-between; */
+}
+#table_1 span,#table_2 span, #table_3 span{
+  margin-right: 4px !important;
+}
+.users_responce{
+  border-left: 1px solid grey;
+  padding: 0px 3px 0px 3px;
+  color: rgb(214, 16, 16);
+}
+.defalut_correct{
+  color: green;
+}
+#quiz_solution{
+  display: flex;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#quiz_solution span{
+  padding-right: 2px;
+}
+#solution_Text{
+  color: green;
+  padding-left: 4px !important;
+  border-left: 1px solid grey;
+  flex-direction: column !important;
+  text-align: justify;
+}
+#selected_questios{
+  text-align: justify;
+  margin-bottom: 5px;
+}
+#unicode{
+  display: flex;
+  align-self: flex-end;
+  flex: 1;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 700px) {
+  #quizOutput,#quiz_solution{
+    font-size: 17px;
+  }
+
+
+}
